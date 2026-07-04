@@ -1,0 +1,78 @@
+:root {
+  --primary: #0f172a;
+  --accent: #f59e0b;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+}
+
+.navbar {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&w=1600&q=80") center/cover;
+  padding-top: 90px;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+}
+
+.letter-spacing {
+  letter-spacing: 0.25rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.featured-plan {
+  border: 2px solid var(--accent) !important;
+  transform: translateY(-6px);
+}
+
+.inquiry-page {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.inquiry-hero {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Gallery & video styles */
+.card video {
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .card-body {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .card video {
+    max-height: 260px;
+  }
+}
